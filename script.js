@@ -45,11 +45,13 @@ console.log(submitButton);
 
 const formElement = document.getElementById('my-form');
 
+const divElement = document.getElementById('ticket-printer');
+
 formElement.addEventListener('submit',function(event){
 
     event.preventDefault();
 
-    console.log('form inviato');
+    divElement.innerHTML = `${usernameElement.value} ${distanceInputElement.value}  ${ageInputElement.value}`
 
     const finalPrice = distanceInputElement.value * 0.21;
 
@@ -75,12 +77,12 @@ formElement.addEventListener('submit',function(event){
         
     }
 
-    const divElement = document.getElementById('ticket-printer');
-    divElement.innerText = usernameElement.value += distanceInputElement.value += ageInputElement.value
+    // let text = usernameElement.value += distanceInputElement.value += ageInputElement.value;
+    // divElement.innerText = text;
 
 })
 
-// let text = usernameElement.value += distanceInputElement.value += ageInputElement.value
+
 
 
 
