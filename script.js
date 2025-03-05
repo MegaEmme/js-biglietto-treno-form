@@ -1,16 +1,21 @@
-const usernameElement = document.getElementById('user-name');
-console.log(usernameElement);
-
-const distanceInputElement = document.getElementById('km');
-console.log(distanceInputElement);
-
-const ageInputElement = document.getElementById('age');
-console.log(ageInputElement);
-
-const submitButton = document.getElementById('button');
-console.log(submitButton);
+//********************** */
 
 // soluzione MILESTONE 1
+
+//********************** */
+
+
+// const usernameElement = document.getElementById('user-name');
+// console.log(usernameElement);
+
+// const distanceInputElement = document.getElementById('km');
+// console.log(distanceInputElement);
+
+// const ageInputElement = document.getElementById('age');
+// console.log(ageInputElement);
+
+// const submitButton = document.getElementById('button');
+// console.log(submitButton);
 
 // submitButton.addEventListener('click',function(){
 
@@ -40,8 +45,24 @@ console.log(submitButton);
 
 
 
+//********************** */
 
 // soluzione MILESTONE 2
+
+//********************** */
+
+
+const usernameElement = document.getElementById('user-name');
+console.log(usernameElement);
+
+const distanceInputElement = document.getElementById('km');
+console.log(distanceInputElement);
+
+const ageInputElement = document.getElementById('age');
+console.log(ageInputElement);
+
+const submitButton = document.getElementById('button');
+console.log(submitButton);
 
 const formElement = document.getElementById('my-form');
 
@@ -66,7 +87,8 @@ formElement.addEventListener('submit',function(event){
     
         } else if (ageInputElement.value >= 65) {
     
-        const discountForty = ((finalPrice /100) * 60)
+        const discountForty = (finalPrice /100) * 60
+
         console.log(`Ciao ${usernameElement.value} 
             Hai più di 65 anni
             Il prezzo scontato del 40% è di: ${discountForty.toFixed(2)} €`);
@@ -86,10 +108,14 @@ formElement.addEventListener('submit',function(event){
             Il prezzo totale è di: ${(finalPrice.toFixed(2))} €`;
     }
 
-
-
 })
 
+
+//********************** */
+
+// soluzione MILESTONE 3
+
+//********************** */
 
 
 
