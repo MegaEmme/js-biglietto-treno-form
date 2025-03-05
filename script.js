@@ -74,9 +74,13 @@ formElement.addEventListener('submit',function(event){
             Il prezzo del biglietto è di: ${finalPrice.toFixed(2)} €`);
         
     }
+
+    const divElement = document.getElementById('ticket-printer');
+    divElement.innerText = usernameElement.value += distanceInputElement.value += ageInputElement.value
+
 })
 
-
+// let text = usernameElement.value += distanceInputElement.value += ageInputElement.value
 
 
 
