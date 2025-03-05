@@ -3,6 +3,12 @@ body{
 }
 
 .container{
-    background-color: antiquewhite;
-    margin-top: 10vh;
+    margin-top: 4rem;
+}
+
+
+input{
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
 }
