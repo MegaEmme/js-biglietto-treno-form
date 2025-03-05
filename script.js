@@ -51,8 +51,6 @@ formElement.addEventListener('submit',function(event){
 
     event.preventDefault();
 
-    divElement.innerHTML = `${usernameElement.value} ${distanceInputElement.value}  ${ageInputElement.value}`
-
     const finalPrice = distanceInputElement.value * 0.21;
 
     if (ageInputElement.value < 18) {
@@ -61,6 +59,10 @@ formElement.addEventListener('submit',function(event){
         console.log(`Ciao ${usernameElement.value} 
             Hai meno di 18 anni
             il prezzo scontato del 20% è di: ${(discountTwenty.toFixed(2))} €`);
+            divElement.innerHTML = `Ciao ${usernameElement.value} 
+                Hai ${ageInputElement.value} anni, cioè meno di 18 anni.
+                Vuoi percorrere ${distanceInputElement.value} km.
+                Il prezzo, scontato del 20%, è di: ${(discountTwenty.toFixed(2))} €`;
     
         } else if (ageInputElement.value >= 65) {
     
@@ -68,17 +70,23 @@ formElement.addEventListener('submit',function(event){
         console.log(`Ciao ${usernameElement.value} 
             Hai più di 65 anni
             Il prezzo scontato del 40% è di: ${discountForty.toFixed(2)} €`);
+            divElement.innerHTML = `Ciao ${usernameElement.value} 
+            Hai ${ageInputElement.value} anni, cioè più di 65 anni.
+            Vuoi percorrere ${distanceInputElement.value} km.
+            Il prezzo, scontato del 40%, è di: ${(discountForty.toFixed(2))} €`;
     
         } else {
     
         console.log(`Ciao ${usernameElement.value} 
             Non hai diritto a sconti
             Il prezzo del biglietto è di: ${finalPrice.toFixed(2)} €`);
-        
+            divElement.innerHTML = `Ciao ${usernameElement.value} 
+            Hai ${ageInputElement.value} anni, non hai diritto a sconti.
+            Vuoi percorrere ${distanceInputElement.value} km.
+            Il prezzo totale è di: ${(finalPrice.toFixed(2))} €`;
     }
 
-    // let text = usernameElement.value += distanceInputElement.value += ageInputElement.value;
-    // divElement.innerText = text;
+
 
 })
 
