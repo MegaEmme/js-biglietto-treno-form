@@ -1,14 +1,22 @@
 body{
-    background-color: blueviolet;
+    background-color: pink;
 }
 
 .container{
     margin-top: 4rem;
 }
 
+h2{
+    color: blue;
+}
 
-input{
+.inputs{
     padding: 1rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
+    background-color: wheat;
+}
+
+#ticket-printer{
+    background-color: wheat;
 }
